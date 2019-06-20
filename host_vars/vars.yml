@@ -1,3 +1,10 @@
 ---
-AWS_ACCESS_KEY:  '{{ VAULT_AWS_ACCESS_KEY }}'
-AWS_SECRET_KEY:  '{{ VAULT_AWS_SECRET_KEY }}'
+AWS_ACCESS_KEY: '{{ VAULT_AWS_ACCESS_KEY }}'
+AWS_SECRET_KEY: '{{ VAULT_AWS_SECRET_KEY }}'
+keypair: DevOps
+instance_type: t2.micro
+security_group: Jenkins_SG
+image: ami-0f49c6ee8f381746f
+region: eu-west-2
+count: 1
+instance_name: Mav_Jekins

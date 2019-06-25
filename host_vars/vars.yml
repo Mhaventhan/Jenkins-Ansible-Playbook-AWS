@@ -1,7 +1,8 @@
 ---
 AWS_ACCESS_KEY: '{{ VAULT_AWS_ACCESS_KEY }}'
 AWS_SECRET_KEY: '{{ VAULT_AWS_SECRET_KEY }}'
-keypair: DevOps
+ansible_ssh_private_key_file: ~/.ssh/DevOps.pem
+keypair: "{{ ansible_ssh_private_key_file }}"
 instance_type: t2.micro
 security_group: Jenkins_SG
 image: ami-0f49c6ee8f381746f

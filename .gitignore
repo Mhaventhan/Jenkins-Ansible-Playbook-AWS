@@ -1,1 +1,2 @@
 host_vars/vault.yml
+*.DS_Store
